@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
       validator(v) {
         return /https?:\/\/(w{1,3}\.)?\S+(#$)?/gm.test(v);
       },
-      message: (props) => `${props.value} is not a valid avatar url!`,
+      message: 'указан неверный адрес',
     },
   },
 });
