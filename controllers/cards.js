@@ -16,7 +16,7 @@ module.exports.createCard = (req, res) => {
     });
 };
 
-module.exports.deleteCard = (req, res) => Card.findByIdAndDelete(req.params.id)
+module.exports.deleteCard = (req, res) => Card.findByIdAndDelete(req.params._id)
   .then((card) => {
     if (!card) {
       res.status(404).send({ message: 'Нет карточки с таким id' });

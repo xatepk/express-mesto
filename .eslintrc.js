@@ -6,7 +6,6 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:react/recommended',
     'airbnb-base',
   ],
   parserOptions: {
